@@ -742,6 +742,7 @@
             height: 100%;
             /* Fill the grid cell */
             /* aspect-ratio removed to let grid control shape */
+            text-decoration: none;
         }
 
         /* Asymmetric Utility Classes */
