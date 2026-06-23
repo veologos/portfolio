@@ -1,0 +1,45 @@
+/* fideguardian.css */
+.fg-hero { background-color: #050505; align-items: stretch; padding-top: 6rem; padding-bottom: 6rem; }
+.fg-hero-text-column { display: flex; flex-direction: column; justify-content: center; }
+.fg-hero-title-box { background-color: #1A1A1A; padding: 16px; border-radius: 16px; margin-bottom: 2.5rem; }
+.fg-hero-title { margin-bottom: 0.5rem; font-weight: 700; line-height: 1.2; color: #ffffff; display: flex; flex-direction: column; gap: 8px; }
+.fg-hero-subtitle { font-size: 1.25rem; }
+.fg-hero-main-title { font-size: 2.5rem; }
+.fg-hero-tagline { font-size: 1.75rem; font-weight: 400; color: #e0e0e0; margin-bottom: 0; max-width: 100%; }
+.fg-hero-list { list-style: none; padding: 16px; margin: 0; color: #cccccc; line-height: 1.5; font-size: 1rem; display: flex; flex-direction: column; gap: 0.8rem; background-color: #1A1A1A; border-radius: 16px; }
+.fg-hero-list strong { color: #40E0D0; font-weight: 600; }
+.fg-hero-image-column { display: flex; justify-content: center; align-items: center; width: 100%; }
+.fg-hero-img { height: 100%; max-height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+.fg-section { padding: 4rem 5%; }
+.fg-context { background-color: #050505; color: #ffffff; text-align: center; }
+.fg-context-container { max-width: 800px; margin: 0 auto; }
+.fg-section-title { font-size: 38px; font-weight: 700; margin-bottom: 2.5rem; color: #ffffff; font-family: 'Montserrat', sans-serif; }
+.fg-context-text-box { display: flex; flex-direction: column; gap: 1.8rem; }
+.fg-text { font-size: 16px; font-weight: 400; line-height: 1.6; color: #aaaaaa; font-family: 'Montserrat', sans-serif; margin: 0; }
+.fg-text.large { font-size: 20px; color: #e0e0e0; }
+.fg-text strong { font-weight: 700; color: #ffffff; }
+.fg-cards-section { background-color: #050505; color: #ffffff; position: relative; overflow: hidden; }
+.fg-bg-img-1 { position: absolute; top: 10%; right: -10%; width: 800px; opacity: 0.05; z-index: 0; pointer-events: none; }
+.fg-bg-img-2 { position: absolute; bottom: 10%; left: -10%; width: 600px; opacity: 0.03; z-index: 0; pointer-events: none; }
+.fg-cards-container { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 3rem; position: relative; z-index: 1; }
+.fg-card { background-color: #121212; border-radius: 24px; padding: 3rem; display: flex; flex-wrap: wrap; gap: 3rem; border: 1px solid rgba(255,255,255,0.05); align-items: center; }
+.fg-card.stretch { align-items: stretch; }
+.fg-card-col { flex: 1 1 400px; display: flex; flex-direction: column; gap: 1rem; }
+.fg-card-col.bg-darker { background-color: #1a1a1a; padding: 2rem; border-radius: 16px; }
+.fg-card-img { width: 100%; border-radius: 16px; object-fit: contain; }
+.fg-card-img.shadow { box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.fg-card-video { width: 280px; border-radius: 16px; object-fit: contain; margin-bottom: 1rem; }
+.fg-card-title { font-size: 28px; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem; font-family: 'Montserrat', sans-serif; }
+.fg-card-subtitle { font-size: 20px; font-weight: 600; color: #ffffff; margin: 1rem 0 0.5rem 0; font-family: 'Montserrat', sans-serif; }
+.fg-card-subtitle.small { font-size: 16px; margin: 0; }
+.fg-card-list { font-size: 16px; font-weight: 400; line-height: 1.6; color: #aaaaaa; font-family: 'Montserrat', sans-serif; margin: 0 0 1rem 1.5rem; padding: 0; }
+.fg-card-list li { margin-bottom: 0.5rem; }
+.fg-card-list.small { font-size: 14px; }
+.fg-text.small { font-size: 14px; }
+.fg-handoff-row { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.fg-handoff-col { flex: 1 1 150px; }
+.fg-handoff-title { font-size: 14px; font-weight: 700; color: #ffffff; margin: 0 0 0.5rem 0; font-family: 'Montserrat', sans-serif; }
+.fg-impact { padding-bottom: 8rem; text-align: center; }
+.fg-impact-container { max-width: 900px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 4rem; }
+.fg-impact-title { font-size: 32px; font-weight: 700; margin-bottom: 2rem; color: #ffffff; font-family: 'Montserrat', sans-serif; }
+.fg-impact-text-box { display: flex; flex-direction: column; gap: 1.5rem; text-align: left; }

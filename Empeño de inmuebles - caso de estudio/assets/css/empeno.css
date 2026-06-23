@@ -1,0 +1,68 @@
+/* empeno.css */
+/* Estilos específicos para el caso de estudio de Empeño de Inmuebles */
+
+.metrics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.metric-card {
+    background-color: #121212;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 1.5rem;
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.metric-card.red { border-top: 3px solid #ff4d4d; }
+.metric-card.green { border-top: 3px solid #4caf50; }
+.metric-card.yellow { border-top: 3px solid #ffc107; }
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.metric-value.red { color: #ff4d4d; }
+.metric-value.green { color: #4caf50; }
+.metric-value.yellow { color: #ffc107; }
+
+.metric-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+
+.metric-label.red { background-color: rgba(255, 77, 77, 0.2); color: #ff4d4d; }
+.metric-label.green { background-color: rgba(76, 175, 80, 0.2); color: #4caf50; }
+.metric-label.yellow { background-color: rgba(255, 193, 7, 0.2); color: #ffc107; }
+
+.metric-text {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.tag.red { background-color: rgba(255, 77, 77, 0.2); color: #ff4d4d; }
+.tag.green { background-color: rgba(76, 175, 80, 0.2); color: #4caf50; }
