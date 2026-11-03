@@ -6,6 +6,10 @@ window.addEventListener('load', () => {
 
     // 1. Iniciamos la cuenta regresiva normal de 6 segundos
     if (intro && skipBtn) {
+        if (window.location.hash) {
+            intro.classList.add('slide-up');
+            return;
+        }
         let introTimer = setTimeout(() => {
             intro.classList.add('slide-up');
         }, 6000);
