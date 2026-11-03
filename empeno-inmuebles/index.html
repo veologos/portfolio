@@ -12,30 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
-</head>
+<style>
+.case-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.8fr);align-items:center;gap:clamp(32px,6vw,90px);min-height:620px;padding:70px max(5%,calc((100% - 1200px)/2));background:radial-gradient(ellipse at 74% 50%,#1b1d24 0%,#090a0d 45%,#050505 75%)}
+.case-hero-copy{max-width:640px}.case-kicker{color:#40e0d0;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.case-hero h1{color:#fff;font-size:clamp(42px,6vw,72px);line-height:1.03;margin:18px 0;letter-spacing:-.045em}.case-hero-copy>p{color:#d2d5dc;font-size:clamp(18px,2vw,22px);line-height:1.55;max-width:620px}
+.case-hero-meta{display:grid;gap:12px;margin-top:28px}.case-hero-meta span{padding:15px 18px;border:1px solid #292c34;border-radius:14px;background:#14161d;color:#d7d9df;line-height:1.5}.case-hero-meta b{display:block;color:#40e0d0;font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.case-hero-visual{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:480px;border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:28px;background:linear-gradient(145deg,#191b22,#101116);box-shadow:0 24px 80px rgba(0,0,0,.35);text-decoration:none}.case-hero-visual img{display:block;width:auto;max-width:100%;max-height:520px;object-fit:contain;border-radius:14px;box-shadow:0 18px 50px #0007}.case-hero-visual span{margin-top:12px;color:#aeb3bd;font-size:12px}
+@media(max-width:800px){.case-hero{grid-template-columns:1fr;padding:52px 6%;min-height:0}.case-hero-visual{min-height:360px}.case-hero-visual img{max-height:420px}}
+</style></head>
 
 <body>
-<header class="site-header"><a href="../Home/#inicio" class="site-brand">VEOLOGOS<span>.</span></a><nav class="site-nav"><a href="../Home/#inicio">Inicio</a><a href="../Home/#casos">Proyectos</a><div class="project-nav"><span>Ver caso</span><div class="project-menu"><a href="../fideguardian/">Hipoteca con BTC</a><a href="../empeno-inmuebles/">Empeño de inmuebles</a><a href="../tickets-mantenimiento/">Tickets de mantenimiento</a></div></div></nav></header>
+<header class="site-header"><a href="../Home/#inicio" class="site-brand">VEOLOGOS<span>.</span></a><nav class="site-nav"><a href="../Home/#inicio">Inicio</a><a href="../Home/#casos">Proyectos</a><div class="project-nav"><span>Ver caso</span><div class="project-menu"><a href="../fideguardian/">Hipoteca con BTC</a><a href="../empeno-inmuebles/">Empeño de inmuebles</a><a href="../tickets-mantenimiento/">Tickets de mantenimiento</a></div></div></nav></header><nav class="project-tabs" aria-label="Cambiar de proyecto"><a href="../empeno-inmuebles/" aria-current="page">Empeño de inmuebles</a><a href="../fideguardian/" >Hipoteca con BTC</a><a href="../tickets-mantenimiento/" >Tickets de mantenimiento</a></nav>
 
-    <section class="hero" style="background-color: #050505; align-items: center; justify-content: center; padding-top: 6rem; padding-bottom: 6rem; position: relative; overflow: hidden;">
-        <!-- Background Video -->
-        
-        
-        <div class="hero-text-column" style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; z-index: 1; max-width: 800px; text-align: center;">
-            <div style="background-color: rgba(26, 26, 26, 0.85); backdrop-filter: blur(8px); padding: 24px; border-radius: 16px; margin-bottom: 2.5rem; width: 100%;">
-                <h1 class="hero-title" style="margin-bottom: 0.5rem; font-weight: 700; line-height: 1.2; color: #ffffff; display: flex; flex-direction: column; gap: 8px;">
-                    <span style="font-size: 1.25rem;">Caso de Estudio:</span>
-                    <span style="font-size: 2.5rem;">Empeño de Inmuebles</span>
-                </h1>
-                <p class="hero-tagline" style="font-size: 1.75rem; font-weight: 400; color: #e0e0e0; margin-bottom: 0; max-width: 100%;">Revisión de UI y propuestas de mejora para un flujo de solicitud con garantía inmobiliaria.</p>
-            </div>
-            
-            <ul style="list-style: none; padding: 16px; margin: 0; color: #cccccc; line-height: 1.5; font-size: 1rem; display: flex; flex-direction: column; gap: 0.8rem; background-color: rgba(26, 26, 26, 0.85); backdrop-filter: blur(8px); border-radius: 16px; width: 100%;">
-                <li><strong style="color: #40E0D0; font-weight: 600;">Rol:</strong> Diseñador Senior UX/UI</li>
-                <li><strong style="color: #40E0D0; font-weight: 600;">Enfoque:</strong> Consistencia visual, pruebas de usabilidad en prototipos y propuestas de simplificación.</li>
-            </ul>
-        </div>
-    </section>
+    <section class="case-hero case-hero-empeno">
+<div class="case-hero-copy"><span class="case-kicker">Caso de estudio · UX/UI</span><h1>Empeño de inmuebles</h1><p>Revisión de interfaz y propuestas para simplificar un flujo de solicitud con garantía inmobiliaria.</p><div class="case-hero-meta"><span><b>Mi rol</b>Diseñador Senior UX/UI</span><span><b>Enfoque</b>Consistencia visual · pruebas de prototipo · propuestas de simplificación</span></div></div>
+<a class="case-hero-visual" href="assets/images/Pagina previa_CM.png" target="_blank" rel="noopener"><img src="assets/images/Pagina previa_CM.png" alt="Pantalla del prototipo de empeño de inmuebles"><span>Pantalla del flujo evaluado</span></a>
+</section>
 
     <section style="background:#050505;color:#fff;padding:4rem 5%;font-family:'Montserrat',sans-serif;"><div style="max-width:1000px;margin:auto;display:flex;flex-direction:column;gap:2rem;">
 <article style="background:#121212;border-radius:22px;padding:2.5rem;"><span style="color:#40e0d0;">Contexto</span><h2>Un flujo existente con fricciones de interfaz y trámite</h2><p style="color:#ccc;line-height:1.7;">El producto ya estaba diseñado cuando me incorporé. El proceso solicitaba información personal, financiera y del inmueble, además de documentos y un cuestionario médico. Mi participación se enfocó en la consistencia visual y en entender dónde las personas encontraban fricción.</p></article>

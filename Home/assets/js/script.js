@@ -1,25 +1,17 @@
 
-// Esperamos a que cargue el sitio
-window.addEventListener('load', () => {
+// La cortina se configura apenas el DOM está listo para que el primer clic siempre responda.
+document.addEventListener('DOMContentLoaded', () => {
     const intro = document.getElementById('intro');
     const skipBtn = document.getElementById('skip-btn');
-
-    // 1. Iniciamos la cuenta regresiva normal de 6 segundos
-    if (intro && skipBtn) {
-        if (window.location.hash) {
-            intro.classList.add('slide-up');
-            return;
-        }
-        let introTimer = setTimeout(() => {
-            intro.classList.add('slide-up');
-        }, 6000);
-
-        // 2. ¿Qué pasa si el usuario presiona "Empecemos"?
-        skipBtn.addEventListener('click', () => {
-            clearTimeout(introTimer); // Cancelamos el temporizador de 6 segundos
-            intro.classList.add('slide-up'); // Subimos el telón inmediatamente
-        });
-    }
+    if (!intro || !skipBtn) return;
+    const closeIntro = () => {
+        if (intro.classList.contains('slide-up')) return;
+        intro.classList.add('slide-up');
+        window.setTimeout(() => { intro.setAttribute('aria-hidden', 'true'); intro.inert = true; }, 1050);
+    };
+    if (window.location.hash) { closeIntro(); return; }
+    const introTimer = window.setTimeout(closeIntro, 6000);
+    skipBtn.addEventListener('click', () => { window.clearTimeout(introTimer); closeIntro(); }, { once: true });
 });
 
 // Configuración del Observador (El "Vigilante")
