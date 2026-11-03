@@ -180,16 +180,17 @@
         }
 
         /* --- UI GENERAL --- */
-        header {
-            padding: 2rem;
-            position: absolute;
-            width: 100%;
-            top: 0;
-            z-index: 10;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        header.site-header { padding: 0 5%; position: sticky; top: 0; width: 100%; min-height: 72px; z-index: 100; display: flex; align-items: center; justify-content: space-between; background: rgba(8,9,13,.94); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,.08); }
+        .site-brand { color:#fff; font-weight:700; font-size:1.15rem; letter-spacing:.04em; text-decoration:none; }
+        .site-brand span { color:var(--accent-color,#40e0d0); }
+        .site-nav { display:flex; align-items:center; gap:1.5rem; }
+        .site-nav a,.project-nav>span { color:#eee; font-size:.9rem; text-decoration:none; cursor:pointer; }
+        .site-nav a:hover,.project-nav>span:hover { color:#40e0d0; }
+        .project-nav { position:relative; padding:1.5rem 0; }
+        .project-menu { display:none; position:absolute; right:0; top:100%; min-width:230px; padding:.5rem; background:#17191f; border:1px solid #30333b; border-radius:14px; box-shadow:0 12px 32px #0008; }
+        .project-nav:hover .project-menu,.project-nav:focus-within .project-menu { display:grid; gap:.2rem; }
+        .project-menu a { padding:.65rem .8rem; border-radius:8px; }
+        .project-menu a:hover { background:#242832; }
 
         .logo {
             font-weight: 700;
@@ -797,6 +798,11 @@
         }
 
         @media (max-width: 768px) {
+            header.site-header { min-height:64px; padding:0 5%; }
+            .site-nav { gap:.8rem; }
+            .site-nav a,.project-nav>span { font-size:.76rem; }
+            .project-nav { padding:1.2rem 0; }
+            .project-menu { min-width:210px; }
             .selected-projects {
                 height: auto;
                 /* Let it flow naturally on mobile */
