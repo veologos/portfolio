@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tickets de mantenimiento | Víctor Oliveros</title>
+<meta name="description" content="Propuesta conceptual de un sistema de tickets para coordinar mantenimiento en tiendas desde el reporte hasta el cierre.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#08090d;--panel:#14161d;--text:#f5f6f8;--muted:#adb3c0;--accent:#40e0d0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Montserrat,Arial,sans-serif;line-height:1.65}
+a{color:inherit}.top{max-width:1120px;margin:auto;padding:28px 24px}.brand{font-weight:700;text-decoration:none;font-size:20px}.brand b{color:var(--accent)}
+main{max-width:1120px;margin:0 auto;padding:28px 24px 80px}.eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(36px,6vw,66px);line-height:1.06;letter-spacing:-.04em;margin:14px 0 20px;max-width:900px}
+.lede{font-size:19px;line-height:1.6;color:#d8dbe2;max-width:840px}
+.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(255,255,255,.22);border-radius:999px;color:#f3d98b;font-size:12px;font-weight:600;margin:8px 0 22px}
+.meta{display:flex;gap:36px;flex-wrap:wrap;border-top:1px solid #292c34;border-bottom:1px solid #292c34;padding:22px 0;margin:32px 0 60px}
+.meta span{display:block;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}.meta strong{font-size:14px;font-weight:600}
+section{margin:58px 0}h2{font-size:clamp(25px,4vw,38px);line-height:1.18;margin:0 0 18px;letter-spacing:-.025em}
+.copy{max-width:780px;color:#d5d8df;font-size:16px}.copy p{margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:26px}
+figure{margin:0;background:var(--panel);border-radius:20px;overflow:hidden;border:1px solid #292c34}
+figure img{display:block;width:100%;height:auto;background:#fff}
+figcaption{padding:16px 18px;color:var(--muted);font-size:13px}
+.note{border-left:3px solid var(--accent);padding:18px 22px;background:var(--panel);color:#d5d8df;max-width:800px}
+footer{border-top:1px solid #292c34;padding:24px;color:var(--muted);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.meta{gap:20px}main{padding-top:10px}}
+</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="../Home/">VEOLOGOS<span><b>.</b></span></a></header>
+<main>
+<div class="eyebrow">Diseño UX/UI · Flujos de servicio</div>
+<h1>Sistema de tickets para mantenimiento en tiendas</h1>
+<div class="badge">Propuesta conceptual · No implementada</div>
+<p class="lede">Diseñé una propuesta para coordinar incidencias de mantenimiento entre el equipo de tienda, proveedores y el equipo de gestión, desde el reporte hasta la resolución y el cierre del ticket.</p>
+<div class="meta"><div><span>Mi rol</span><strong>Diseñador UX/UI</strong></div><div><span>Alcance</span><strong>Flujo, interfaces y estados</strong></div><div><span>Perfiles</span><strong>Tienda · proveedor · gestión</strong></div><div><span>Estado</span><strong>Propuesta de producto</strong></div></div>
+<section><div class="copy"><div class="eyebrow">El reto</div><h2>Hacer visible el avance de una solicitud</h2><p>La propuesta buscaba reemplazar una coordinación manual por un flujo compartido: una tienda reporta el problema con descripción y archivos; el proveedor recibe la solicitud, conversa y coordina una visita; y el equipo de gestión puede dar seguimiento a cotización y cierre.</p><p>El diseño contempló tres perfiles y sus distintas necesidades, con estados de seguimiento para que cada parte supiera qué debía ocurrir a continuación.</p></div></section>
+<section><div class="eyebrow">Diseño del flujo</div><h2>Del reporte al seguimiento</h2><div class="grid">
+<figure><img src="assets/images/ticket-create.png" alt="Pantalla móvil del prototipo para crear un ticket y adjuntar evidencia"><figcaption>Registro de una incidencia con descripción y archivos adjuntos. Pantalla de prototipo.</figcaption></figure>
+<figure><img src="assets/images/ticket-status.png" alt="Pantalla móvil del prototipo con tickets y estados de seguimiento"><figcaption>Vista de tickets para consultar solicitudes y su estado. Pantalla de prototipo.</figcaption></figure>
+</div></section>
+<section><div class="copy"><div class="eyebrow">Mi contribución</div><h2>Un flujo que conecta tres perfiles</h2><p>Diseñé la experiencia y las pantallas del flujo junto con mi jefe, incluyendo el registro por parte de la tienda, la comunicación y coordinación con proveedores, la evidencia de reparación, los cambios de estado y la gestión web de cotizaciones y cierre.</p><p>La propuesta se trabajó con el objetivo de agilizar la coordinación sin perder trazabilidad de la incidencia.</p></div></section>
+<section><div class="note"><strong>Alcance real:</strong> el proyecto no llegó a implementarse. La iniciativa quedó como propuesta antes de concluir las negociaciones con el cliente. Por eso no atribuyo resultados operativos ni de negocio a este diseño.</div></section>
+</main>
+<footer><span>Víctor Oliveros · Product Designer UX/UI</span><a href="../Home/">Volver al portafolio</a></footer>
+</body></html>
