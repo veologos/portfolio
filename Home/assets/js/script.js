@@ -242,3 +242,38 @@ serviceCards.forEach(card => {
         card.style.setProperty('--y', `${yPercent}%`);
     });
 });
+
+
+// Navegación: scroll corto con easing y contraste del header sobre el hero claro.
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.site-header');
+    const hero = document.querySelector('.hero');
+    const projectsLink = document.querySelector('.site-nav a[href="#casos"]');
+
+    if (header && hero && 'IntersectionObserver' in window) {
+        const lightSectionObserver = new IntersectionObserver(([entry]) => {
+            header.classList.toggle('over-light', entry.isIntersecting && entry.intersectionRatio > 0.12);
+        }, { threshold: [0, 0.12, 0.5] });
+        lightSectionObserver.observe(hero);
+    }
+
+    if (projectsLink) {
+        projectsLink.addEventListener('click', event => {
+            const target = document.getElementById('casos');
+            if (!target) return;
+            event.preventDefault();
+            const startY = window.scrollY;
+            const endY = target.getBoundingClientRect().top + startY - (header?.offsetHeight || 0);
+            const duration = 400;
+            const startTime = performance.now();
+            const ease = t => 1 - Math.pow(1 - t, 3);
+            const frame = now => {
+                const progress = Math.min((now - startTime) / duration, 1);
+                window.scrollTo(0, startY + (endY - startY) * ease(progress));
+                if (progress < 1) requestAnimationFrame(frame);
+                else history.replaceState(null, '', '#casos');
+            };
+            requestAnimationFrame(frame);
+        });
+    }
+});
