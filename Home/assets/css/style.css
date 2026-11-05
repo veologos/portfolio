@@ -1112,3 +1112,77 @@
  .project-tabs { top:64px; padding:8px 14px; }
  .project-tabs a { padding:8px 12px; font-size:12px; }
 }
+
+
+/* Solicitudes de noviembre: navegación y tarjetas */
+.site-header {
+    background: rgba(18, 19, 26, .48);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom-color: rgba(255,255,255,.12);
+    transition: background .25s ease, border-color .25s ease, color .25s ease;
+}
+.site-header.over-light {
+    background: rgba(255,255,255,.56);
+    border-bottom-color: rgba(20,22,28,.12);
+}
+.site-header .site-brand,
+.site-header .site-nav a,
+.site-header .header-contact a { color:#fff; }
+.site-header.over-light .site-brand,
+.site-header.over-light .site-nav a,
+.site-header.over-light .header-contact a { color:#171717; }
+.site-header .site-brand span { color:#40e0d0; }
+.site-header.over-light .site-brand span { color:#a000a0; }
+.header-contact { display:flex; align-items:center; gap:.65rem; }
+.header-contact a {
+    display:inline-flex; align-items:center; justify-content:center;
+    min-height:38px; padding:.45rem .85rem; border:1px solid currentColor;
+    border-radius:999px; text-decoration:none; font-size:.82rem; font-weight:600;
+    transition:background .2s ease, color .2s ease, transform .2s ease;
+}
+.header-contact a:hover { background:#40e0d0; color:#111 !important; transform:translateY(-1px); }
+.site-header.over-light .header-contact a:hover { color:#111; }
+.hero-chips-container { display:none !important; }
+html { scroll-behavior:auto; }
+.project-info {
+    opacity:0;
+    background:linear-gradient(180deg,rgba(0,0,0,.1) 15%,rgba(0,0,0,.88) 100%);
+    transition:opacity .28s ease;
+}
+.project-card:hover .project-info,
+.project-card:focus-visible .project-info { opacity:1; }
+.project-info h3 { color:#fff; }
+.project-info span {
+    background:none; -webkit-text-fill-color:#c6cbd2; color:#c6cbd2;
+    text-transform:none; letter-spacing:0; font-weight:400;
+}
+.service-card { flex-direction:column; align-items:center; justify-content:flex-start; text-align:center; gap:1.1rem; }
+.service-image { margin:0 auto; }
+.service-content { align-items:center; text-align:center; }
+.carousel-content { gap:0; }
+.carousel-item { margin:0 12px; }
+.carousel-item img,.carousel-item svg,.carousel-item .xd-mark {
+    width:24px; height:24px; flex:0 0 24px; color:#fff; object-fit:contain;
+}
+.carousel-item .xd-mark {
+    display:inline-flex; align-items:center; justify-content:center; border-radius:5px;
+    background:#fff; color:#171717; font-size:13px; font-weight:800; letter-spacing:-.08em;
+}
+.carousel-item .brand-mark { fill:#fff; color:#fff; }
+@media (max-width:900px) {
+    .site-header { padding-inline:4%; }
+    .site-nav { gap:.8rem; }
+}
+@media (max-width:620px) {
+    .site-header { min-height:64px; gap:.45rem; }
+    .site-brand { font-size:.9rem; }
+    .site-nav { gap:.55rem; }
+    .site-nav a { font-size:.72rem; }
+    .header-contact { gap:.35rem; }
+    .header-contact a { min-height:32px; padding:.35rem .5rem; font-size:.68rem; }
+    .project-info { opacity:1; }
+}
+@media (prefers-reduced-motion:reduce) {
+    .project-info,.project-info h3,.project-info span { transition:none !important; }
+}
