@@ -104,7 +104,7 @@
 .fg-decision-panel p{font-size:14px;line-height:1.5;color:#e1e5ea;margin:0 0 1rem}
 @media(max-width:768px){.fg-scenario-grid{grid-template-columns:1fr}.fg-research-timeline{grid-template-columns:1fr 1fr;gap:16px}.fg-research-timeline:before{display:none}.fg-evaluation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fg-test-grid{grid-template-columns:1fr}.fg-decision-tabs{grid-template-columns:1fr}.fg-metric strong{font-size:52px}}
 
-.fg-context-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;text-align:left}
+.fg-context-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;text-align:left}
 .fg-context-column{background:#121212;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:1.5rem;min-height:220px;transition:transform .2s ease,border-color .2s ease}
 .fg-context-column:hover{transform:translateY(-4px);border-color:rgba(64,224,208,.45)}
 .fg-context-column h3{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.2;color:#fff;margin:.8rem 0 1rem}
