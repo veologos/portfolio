@@ -111,3 +111,6 @@
 .fg-context-column .fg-text{font-size:14px;color:#aeb2bd}
 .fg-context-icon{color:#40e0d0;font-size:28px}
 @media(max-width:768px){.fg-context-columns{grid-template-columns:1fr}.fg-context-column{min-height:auto}}
+
+.fg-scenario-shot{height:260px;border-radius:16px;overflow:hidden;background:#0c0e13;border:1px solid rgba(255,255,255,.08);margin-bottom:1rem}
+.fg-scenario-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 44%}
