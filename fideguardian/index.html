@@ -70,7 +70,7 @@
                 <article class="fg-scenario-card">
                     <div class="fg-scenario-head"><span class="fg-scenario-tag">Cotizador</span><span class="fg-scenario-years">10 años</span></div>
                     <div class="fg-scenario-content" style="display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:1.25rem;align-items:stretch;">
-                        <div class="fg-scenario-shot" style="height:320px;margin:0;border-radius:16px;overflow:hidden;position:relative;"><a href="assets/images/cotizador-10-anos-user.png" target="_blank" rel="noopener" aria-label="Ver imagen completa del cotizador a 10 años" class="fg-scenario-image-link"><img src="assets/images/cotizador-10-anos-user.png" alt="Cotizador hipotecario en escenario de 10 años" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:contain;object-position:center top;"></a><a href="assets/images/cotizador-10-anos-user.png" target="_blank" rel="noopener" aria-label="Abrir imagen completa" class="fg-expand-button"><span class="material-symbols-outlined">fullscreen</span></a></div>
+                        <div class="fg-scenario-shot" style="height:320px;margin:0;border-radius:16px;overflow:hidden;position:relative;"><a href="assets/images/cotizador-10-anos-user.png" target="_blank" rel="noopener" aria-label="Ver imagen completa del cotizador a 10 años" class="fg-scenario-image-link"><img src="assets/images/cotizador-10-anos-user.png" alt="Cotizador hipotecario en escenario de 10 años" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:contain;object-position:center top;"></a><a href="assets/images/cotizador-10-anos-user.png" target="_blank" rel="noopener" aria-label="Abrir imagen completa" class="fg-expand-button" data-modal-image><span class="material-symbols-outlined">fullscreen</span></a></div>
                         <div class="fg-scenario-info">
                             <div class="fg-scenario-screen">
                                 <div class="fg-screen-top"><span>Plazo hipotecario</span><strong>10 años</strong></div>
@@ -85,7 +85,7 @@
                 <article class="fg-scenario-card">
                     <div class="fg-scenario-head"><span class="fg-scenario-tag">Cotizador</span><span class="fg-scenario-years">20 años</span></div>
                     <div class="fg-scenario-content" style="display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:1.25rem;align-items:stretch;">
-                        <div class="fg-scenario-shot" style="height:320px;margin:0;border-radius:16px;overflow:hidden;position:relative;"><a href="assets/images/cotizador-20-anos-user.png" target="_blank" rel="noopener" aria-label="Ver imagen completa del cotizador a 20 años" class="fg-scenario-image-link"><img src="assets/images/cotizador-20-anos-user.png" alt="Cotizador hipotecario en escenario de 20 años" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:contain;object-position:center top;"></a><a href="assets/images/cotizador-20-anos-user.png" target="_blank" rel="noopener" aria-label="Abrir imagen completa" class="fg-expand-button"><span class="material-symbols-outlined">fullscreen</span></a></div>
+                        <div class="fg-scenario-shot" style="height:320px;margin:0;border-radius:16px;overflow:hidden;position:relative;"><a href="assets/images/cotizador-20-anos-user.png" target="_blank" rel="noopener" aria-label="Ver imagen completa del cotizador a 20 años" class="fg-scenario-image-link"><img src="assets/images/cotizador-20-anos-user.png" alt="Cotizador hipotecario en escenario de 20 años" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:contain;object-position:center top;"></a><a href="assets/images/cotizador-20-anos-user.png" target="_blank" rel="noopener" aria-label="Abrir imagen completa" class="fg-expand-button" data-modal-image><span class="material-symbols-outlined">fullscreen</span></a></div>
                         <div class="fg-scenario-info">
                             <div class="fg-scenario-screen">
                                 <div class="fg-screen-top"><span>Plazo hipotecario</span><strong>20 años</strong></div>
@@ -257,6 +257,10 @@
         </div>
     </section>
 
+    <div class="fg-image-modal" id="fg-image-modal" hidden role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+        <button class="fg-image-modal-close" type="button" aria-label="Cerrar imagen"><span class="material-symbols-outlined">close</span></button>
+        <img id="fg-image-modal-img" src="" alt="">
+    </div>
     <div id="custom-cursor"></div>
     <script src="../Home/assets/js/script.js"></script>
     <script src="assets/js/fideguardian.js"></script>
