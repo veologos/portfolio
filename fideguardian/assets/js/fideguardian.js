@@ -1,16 +1,18 @@
 // fideguardian.js
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.fg-decision-tab').forEach((tab) => {
+    const tabs = document.querySelectorAll('.fg-decision-tab');
+    const panels = document.querySelectorAll('.fg-decision-panel');
+    tabs.forEach((tab) => {
         tab.addEventListener('click', () => {
             const targetId = tab.dataset.decision;
-            document.querySelectorAll('.fg-decision-tab').forEach((item) => {
+            tabs.forEach((item) => {
                 const active = item === tab;
                 item.classList.toggle('is-active', active);
                 item.setAttribute('aria-selected', active ? 'true' : 'false');
             });
-            document.querySelectorAll('.fg-decision-panel').forEach((panel) => {
-                panel.hidden = panel.id !== targetId;
-            });
+            panels.forEach((panel) => panel.classList.toggle('is-focused', panel.id === targetId));
+            const target = document.getElementById(targetId);
+            if (target) target.focus({ preventScroll: true });
         });
     });
 });
