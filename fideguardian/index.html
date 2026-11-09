@@ -23,13 +23,13 @@
                     <span class="fg-hero-subtitle">Caso de Estudio:</span>
                     <span class="fg-hero-main-title">Hipoteca con BTC</span>
                 </h1>
-                <p class="fg-hero-tagline">Diseño de una cotización hipotecaria con una estrategia de inversión vinculada a BTC.</p>
+                <p class="fg-hero-tagline">Diseño de una cotización hipotecaria con una compra obligatoria de BTC integrada al enganche.</p>
             </div>
             
             <ul class="fg-hero-list">
                 <li><strong>Rol:</strong> Diseñador Senior UX/UI · flujo, UI Kit y handoff</li>
                 <li><strong>Equipo:</strong> 1 UX Designer, 1 UI Designer, Product Manager, Stakeholders de Negocio, Equipo de Desarrollo.</li>
-                <li><strong>Herramientas:</strong> Figma, FigJam, IA (Investigación con Usuarios Sintéticos).</li>
+                <li><strong>Herramientas:</strong> Figma, FigJam, investigación con usuarios reales y usuarios sintéticos como apoyo exploratorio.</li>
             </ul>
         </div>
         <div class="fg-hero-image-column">
@@ -42,8 +42,41 @@
             <h2 class="fg-section-title">Contexto</h2>
             <div class="fg-context-text-box">
                 <p class="fg-text large">Este proyecto nació como una iniciativa dentro de la empresa enfocada en un nicho ultra-premium.</p>
-                <p class="fg-text large"><strong>La propuesta de valor era audaz:</strong> permitir a clientes de alto poder adquisitivo obtener departamentos de lujo ($10 a $40 MDP) pagando un enganche que incluía una inversión del 10% en Bitcoin, la cual proyectaba liquidar la deuda hipotecaria a largo plazo (10 a 20 años).</p>
+                <p class="fg-text large"><strong>La propuesta de valor era audaz:</strong> permitir a clientes de alto poder adquisitivo adquirir departamentos de lujo ($10 a $40 MDP) mediante un proceso de enganche que incluía una compra obligatoria de Bitcoin equivalente al 10% del valor del inmueble.</p>
+                <p class="fg-text large">La hipótesis del producto era que esa inversión pudiera crecer con el tiempo hasta alcanzar el saldo de la deuda hipotecaria: aproximadamente en 8 años para un plazo contratado de 10 años y en 10 años para un plazo contratado de 20 años.</p>
             </div>
+        </div>
+    </section>
+
+
+    <section class="fg-section fg-scenario">
+        <div class="fg-scenario-container">
+            <div class="fg-section-kicker">La lógica del producto</div>
+            <h2 class="fg-section-title">Dos escenarios de cotización</h2>
+            <p class="fg-text large">La interfaz debía ayudar a comparar el plazo de la hipoteca con el crecimiento estimado de la inversión en BTC, sin ocultar los supuestos del modelo.</p>
+            <div class="fg-scenario-grid">
+                <article class="fg-scenario-card">
+                    <div class="fg-scenario-head"><span class="fg-scenario-tag">Cotizador</span><span class="fg-scenario-years">10 años</span></div>
+                    <div class="fg-scenario-screen">
+                        <div class="fg-screen-top"><span>Plazo hipotecario</span><strong>10 años</strong></div>
+                        <div class="fg-screen-row"><span>Compra obligatoria de BTC</span><strong>10%</strong></div>
+                        <div class="fg-screen-meter"><span style="width:80%"></span></div>
+                        <div class="fg-screen-foot"><span>Deuda contratada</span><strong>Liquidación estimada ≈ 8 años</strong></div>
+                    </div>
+                    <p class="fg-text small">El escenario mostraba cómo una inversión equivalente al 10% del inmueble podía alcanzar la deuda antes del plazo contratado, según la proyección del producto.</p>
+                </article>
+                <article class="fg-scenario-card">
+                    <div class="fg-scenario-head"><span class="fg-scenario-tag">Cotizador</span><span class="fg-scenario-years">20 años</span></div>
+                    <div class="fg-scenario-screen">
+                        <div class="fg-screen-top"><span>Plazo hipotecario</span><strong>20 años</strong></div>
+                        <div class="fg-screen-row"><span>Compra obligatoria de BTC</span><strong>10%</strong></div>
+                        <div class="fg-screen-meter"><span style="width:50%"></span></div>
+                        <div class="fg-screen-foot"><span>Deuda contratada</span><strong>Liquidación estimada ≈ 10 años</strong></div>
+                    </div>
+                    <p class="fg-text small">La comparación permitía explicar que la proyección dependía del plazo seleccionado y de la evolución estimada de la inversión.</p>
+                </article>
+            </div>
+            <p class="fg-disclaimer">Escenarios y tiempos expresados como proyecciones del producto; no representan resultados posteriores al lanzamiento.</p>
         </div>
     </section>
 
@@ -63,21 +96,48 @@
                 </div>
             </div>
 
-            <div class="fg-card">
+
+            <div class="fg-card fg-research-card">
                 <div class="fg-card-col">
-                    <h3 class="fg-card-title">Proceso de descubrimiento</h3>
-                    <p class="fg-text">Iniciamos con una auditoría profunda y entrevistas con los asesores de ventas y descubrimos que el usuario final:</p>
-                    <ul class="fg-card-list">
-                        <li>Carece de tiempo para sesiones prolongadas; prefiere comunicación asíncrona (WhatsApp).</li>
-                        <li>Tiene un perfil internacional (muchos extranjeros, o empresarios mexicanos de alto nivel) con capital en criptomonedas.</li>
-                        <li>Delega la mayoría de los trámites; sólo lee estrictamente lo necesario.</li>
-                    </ul>
-                    <h4 class="fg-card-subtitle">La innovación en Research</h4>
-                    <p class="fg-text">Debido al extremo hermetismo y dificultad para reclutar usuarios de este nivel con metodologías tradicionales, diseñé e implementé una estrategia de investigación complementaria basada en <strong>Usuarios Sintéticos generados por IA</strong>.</p>
-                    <p class="fg-text">Creamos un documento operativo detallado <strong>con 4 arquetipos de alto nivel</strong> (ej. el patrimonialista tradicional, el tech-bro, el inversionista sofisticado) para interactuar, validamos tonos de voz, usabilidad y enfoques de productos financieros antes de invertir en reclutamiento costoso o arriesgar la relación con clientes reales.</p>
+                    <h3 class="fg-card-title">Investigación y validación</h3>
+                    <p class="fg-text">Combinamos entrevistas con asesores de venta, investigación con usuarios reales, focus groups y benchmark competitivo. Debido a la dificultad de acceder de forma constante al segmento ultra-premium, utilizamos usuarios sintéticos como apoyo exploratorio para complementar la validación de hipótesis.</p>
+                    <div class="fg-research-timeline" role="list" aria-label="Métodos de investigación">
+                        <div class="fg-research-step" role="listitem"><span class="material-symbols-outlined">support_agent</span><strong>Asesores de venta</strong><small>Contexto comercial</small></div>
+                        <div class="fg-research-step" role="listitem"><span class="material-symbols-outlined">person_search</span><strong>Usuarios reales</strong><small>Claridad e intuición</small></div>
+                        <div class="fg-research-step" role="listitem"><span class="material-symbols-outlined">groups</span><strong>Focus groups</strong><small>Percepción del producto</small></div>
+                        <div class="fg-research-step" role="listitem"><span class="material-symbols-outlined">compare_arrows</span><strong>Benchmark</strong><small>Patrones del mercado</small></div>
+                        <div class="fg-research-step" role="listitem"><span class="material-symbols-outlined">smart_toy</span><strong>Usuarios sintéticos</strong><small>Exploración complementaria</small></div>
+                    </div>
+                    <p class="fg-text">La investigación buscó entender si el flujo era fácil de recorrer, intuitivo y útil para centralizar la cotización y ayudar a los asesores a responder las dudas de sus clientes.</p>
+                    <h4 class="fg-card-subtitle">¿Qué se evaluó?</h4>
+                    <div class="fg-evaluation-grid">
+                        <div><span class="material-symbols-outlined">route</span><strong>Recorrido</strong><small>Facilidad para completar la cotización.</small></div>
+                        <div><span class="material-symbols-outlined">lightbulb</span><strong>Comprensión</strong><small>Claridad de la propuesta de BTC.</small></div>
+                        <div><span class="material-symbols-outlined">touch_app</span><strong>Intuición</strong><small>Fricciones y dudas durante el flujo.</small></div>
+                        <div><span class="material-symbols-outlined">dashboard_customize</span><strong>Centralización</strong><small>Menos herramientas para cotizar.</small></div>
+                        <div><span class="material-symbols-outlined">forum</span><strong>Respuesta</strong><small>Apoyo para conversar con clientes.</small></div>
+                        <div><span class="material-symbols-outlined">error_outline</span><strong>Fricciones</strong><small>Momentos de confusión o abandono.</small></div>
+                    </div>
                 </div>
                 <div class="fg-card-col">
-                    <img src="assets/images/Ai studio.png" alt="AI Studio Research" class="fg-card-img" loading="lazy" decoding="async">
+                    <img src="assets/images/Ai studio.png" alt="Exploración complementaria con usuarios sintéticos en AI Studio" class="fg-card-img" loading="lazy" decoding="async">
+                    <p class="fg-caption">Los usuarios sintéticos complementaron la investigación con personas reales; no la sustituyeron.</p>
+                </div>
+            </div>
+
+            <div class="fg-card fg-usability-card">
+                <div class="fg-card-col">
+                    <div class="fg-metric"><strong>11</strong><span>de 20 participantes estimados</span></div>
+                    <h3 class="fg-card-title">Pruebas de usabilidad y validación</h3>
+                    <p class="fg-text">El segmento era difícil de reclutar. Entrevistamos a 11 de las 20 personas estimadas y usamos las sesiones disponibles para validar el recorrido, la claridad del producto y la experiencia de cotización.</p>
+                </div>
+                <div class="fg-card-col">
+                    <div class="fg-test-grid">
+                        <div><span class="material-symbols-outlined">flag</span><strong>Objetivo</strong><small>Validar claridad, intuición y facilidad de uso.</small></div>
+                        <div><span class="material-symbols-outlined">task_alt</span><strong>Tareas</strong><small>Recorrer escenarios y entender la cotización.</small></div>
+                        <div><span class="material-symbols-outlined">visibility</span><strong>Observación</strong><small>Detectar dudas, fricciones y errores.</small></div>
+                        <div><span class="material-symbols-outlined">autorenew</span><strong>Iteración</strong><small>Ajustar contenido, estructura y estados.</small></div>
+                    </div>
                 </div>
             </div>
 
@@ -103,6 +163,24 @@
                         <li><strong>Salvaguardas:</strong> Implementamos que el usuario pueda ver en tiempo real el costo "Préstamo + Plazo Fijo" + "Abono de enganche". Esto reduce la fricción en la simulación de escenarios, dando al usuario flexibilidad.</li>
                     </ul>
                 </div>
+            </div>
+
+
+            <div class="fg-card fg-decision-card">
+                <div class="fg-card-col">
+                    <h3 class="fg-card-title">De la evidencia a la decisión</h3>
+                    <p class="fg-text">Selecciona cada hallazgo para ver cómo se tradujo en una decisión de diseño.</p>
+                    <div class="fg-decision-tabs" role="tablist">
+                        <button class="fg-decision-tab is-active" role="tab" aria-selected="true" data-decision="decision-1">Propuesta compleja</button>
+                        <button class="fg-decision-tab" role="tab" aria-selected="false" data-decision="decision-2">Cotización fragmentada</button>
+                        <button class="fg-decision-tab" role="tab" aria-selected="false" data-decision="decision-3">Formulario extenso</button>
+                        <button class="fg-decision-tab" role="tab" aria-selected="false" data-decision="decision-4">Cambios dispersos</button>
+                    </div>
+                </div>
+                <div class="fg-decision-panel" id="decision-1" role="tabpanel"><span class="material-symbols-outlined">lightbulb</span><div><strong>Hallazgo</strong><p>La relación entre hipoteca, BTC y plazo era difícil de explicar.</p><strong>Decisión</strong><p>Reorganizar la arquitectura de información y mostrar escenarios comparables.</p></div></div>
+                <div class="fg-decision-panel" id="decision-2" role="tabpanel" hidden><span class="material-symbols-outlined">dashboard_customize</span><div><strong>Hallazgo</strong><p>El asesor necesitaba cambiar entre herramientas.</p><strong>Decisión</strong><p>Centralizar la cotización y sus variables principales en un mismo flujo.</p></div></div>
+                <div class="fg-decision-panel" id="decision-3" role="tabpanel" hidden><span class="material-symbols-outlined">format_list_numbered</span><div><strong>Hallazgo</strong><p>El onboarding concentraba demasiada información legal y financiera.</p><strong>Decisión</strong><p>Aplicar progressive disclosure y dividir el recorrido en pasos guiados.</p></div></div>
+                <div class="fg-decision-panel" id="decision-4" role="tabpanel" hidden><span class="material-symbols-outlined">sync_alt</span><div><strong>Hallazgo</strong><p>Los cambios se perdían entre diseño, negocio y desarrollo.</p><strong>Decisión</strong><p>Crear un sistema de control de cambios visible en Figma.</p></div></div>
             </div>
 
             <div class="fg-card">
@@ -144,7 +222,7 @@
         <div class="fg-impact-container">
             <h2 class="fg-impact-title">Entregables y retrospectiva</h2>
             <div class="fg-impact-text-box">
-                <p class="fg-text">Al momento de mi salida, el producto no se había lanzado a producción. Diseñé el flujo de cotización y solicitud, el UI Kit y la documentación para desarrollo. No cuento con resultados posteriores al lanzamiento.</p>
+                <p class="fg-text">Al momento de mi salida, el producto no se había lanzado a producción. Diseñé el flujo de cotización y solicitud, el UI Kit y la documentación para desarrollo. No cuento con resultados posteriores al lanzamiento; por eso presento los hallazgos, decisiones y entregables del proceso, sin atribuir métricas de negocio posteriores.</p>
                 <p class="fg-text"><strong>Aprendizaje clave:</strong> La innovación no siempre significa implementar la última tecnología disponible (como automatizar el cotizador con IA). A veces, la verdadera innovación es resolver interacciones técnicas y legales densas de forma amena y utilizar la arquitectura de la información, el UX Writing y el Design Ops para entregar una experiencia premium.</p>
             </div>
         </div>
