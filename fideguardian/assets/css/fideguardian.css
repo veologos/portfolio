@@ -114,3 +114,10 @@
 
 .fg-scenario-shot{height:260px;border-radius:16px;overflow:hidden;background:#0c0e13;border:1px solid rgba(255,255,255,.08);margin-bottom:1rem}
 .fg-scenario-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 44%}
+
+.fg-scenario-content{display:grid;grid-template-columns:96px minmax(0,1fr);gap:1rem;align-items:stretch}
+.fg-scenario-info{min-width:0}
+.fg-scenario-content .fg-scenario-shot{height:270px;margin:0}
+.fg-scenario-content .fg-scenario-shot img{object-position:center 58%}
+.fg-scenario-content .fg-scenario-screen{height:auto;margin-bottom:1rem}
+@media(max-width:768px){.fg-scenario-content{grid-template-columns:84px minmax(0,1fr);gap:.75rem}.fg-scenario-content .fg-scenario-shot{height:250px}}
