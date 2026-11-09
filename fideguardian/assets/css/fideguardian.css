@@ -121,3 +121,6 @@
 .fg-scenario-content .fg-scenario-shot img{object-position:center 58%}
 .fg-scenario-content .fg-scenario-screen{height:auto;margin-bottom:1rem}
 @media(max-width:768px){.fg-scenario-content{grid-template-columns:84px minmax(0,1fr);gap:.75rem}.fg-scenario-content .fg-scenario-shot{height:250px}}
+
+
+.fg-scenario-full-link{display:inline-flex;align-items:center;gap:.35rem;margin:.55rem 0 0 .15rem;color:#d9b26f;font-size:.75rem;font-weight:600;letter-spacing:.01em;text-decoration:none}.fg-scenario-full-link:hover{color:#fff;text-decoration:underline}
