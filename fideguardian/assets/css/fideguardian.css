@@ -12,7 +12,7 @@
 .fg-hero-img { height: 100%; max-height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
 .fg-section { padding: 4rem 5%; }
 .fg-context { background-color: #050505; color: #ffffff; text-align: center; }
-.fg-context-container { max-width: 800px; margin: 0 auto; }
+.fg-context-container { max-width: 1000px; margin: 0 auto; }
 .fg-section-title { font-size: 38px; font-weight: 700; margin-bottom: 2.5rem; color: #ffffff; font-family: 'Montserrat', sans-serif; }
 .fg-context-text-box { display: flex; flex-direction: column; gap: 1.8rem; }
 .fg-text { font-size: 16px; font-weight: 400; line-height: 1.6; color: #aaaaaa; font-family: 'Montserrat', sans-serif; margin: 0; }
