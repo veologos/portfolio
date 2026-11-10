@@ -152,33 +152,17 @@
                 </div>
             </div>
 
-            <div class="fg-card fg-evaluation-card">
+            <div class="fg-card fg-decision-card">
                 <div class="fg-card-col">
-                    <h3 class="fg-card-title">¿Qué se evaluó?</h3>
-                    <div class="fg-evaluation-grid">
-                        <div><span class="material-symbols-outlined">route</span><strong>Recorrido</strong><small>Facilidad para completar la cotización.</small></div>
-                        <div><span class="material-symbols-outlined">lightbulb</span><strong>Comprensión</strong><small>Claridad de la propuesta de BTC.</small></div>
-                        <div><span class="material-symbols-outlined">touch_app</span><strong>Intuición</strong><small>Fricciones y dudas durante el flujo.</small></div>
-                        <div><span class="material-symbols-outlined">dashboard_customize</span><strong>Centralización</strong><small>Menos herramientas para cotizar.</small></div>
-                        <div><span class="material-symbols-outlined">forum</span><strong>Respuesta</strong><small>Apoyo para conversar con clientes.</small></div>
-                        <div><span class="material-symbols-outlined">error_outline</span><strong>Fricciones</strong><small>Momentos de confusión o abandono.</small></div>
-                    </div>
+                    <div class="fg-section-kicker">Fase de definición</div>
+                    <h3 class="fg-card-title">De la evidencia a la decisión</h3>
+                    <p class="fg-text">Cada tarjeta conecta un hallazgo de investigación con la decisión de diseño que tomamos.</p>
                 </div>
-            </div>
-
-            <div class="fg-card fg-usability-card">
-                <div class="fg-card-col">
-                    <div class="fg-metric"><strong>11</strong><span>de 20 participantes estimados</span></div>
-                    <h3 class="fg-card-title">Pruebas de usabilidad y validación</h3>
-                    <p class="fg-text">El segmento era difícil de reclutar. Entrevistamos a 11 de las 20 personas estimadas y usamos las sesiones disponibles para validar el recorrido, la claridad del producto y la experiencia de cotización.</p>
-                </div>
-                <div class="fg-card-col">
-                    <div class="fg-test-grid">
-                        <div><span class="material-symbols-outlined">flag</span><strong>Objetivo</strong><small>Validar claridad, intuición y facilidad de uso.</small></div>
-                        <div><span class="material-symbols-outlined">task_alt</span><strong>Tareas</strong><small>Recorrer escenarios y entender la cotización.</small></div>
-                        <div><span class="material-symbols-outlined">visibility</span><strong>Observación</strong><small>Detectar dudas, fricciones y errores.</small></div>
-                        <div><span class="material-symbols-outlined">autorenew</span><strong>Iteración</strong><small>Ajustar contenido, estructura y estados.</small></div>
-                    </div>
+                <div class="fg-decision-panels" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:12px;width:100%;flex:0 0 100%;">
+                    <article class="fg-decision-panel" id="decision-1" role="tabpanel" tabindex="0"><div class="fg-decision-panel-head"><span class="material-symbols-outlined">lightbulb</span><strong>Propuesta compleja</strong></div><div><b>Hallazgo</b><p>La relación entre hipoteca, BTC y plazo era difícil de explicar.</p><b>Decisión</b><p>Reorganizar la arquitectura de información y mostrar escenarios comparables.</p></div></article>
+                    <article class="fg-decision-panel" id="decision-2" role="tabpanel" tabindex="0"><div class="fg-decision-panel-head"><span class="material-symbols-outlined">dashboard_customize</span><strong>Cotización fragmentada</strong></div><div><b>Hallazgo</b><p>El asesor necesitaba cambiar entre herramientas.</p><b>Decisión</b><p>Centralizar la cotización y sus variables principales en un mismo flujo.</p></div></article>
+                    <article class="fg-decision-panel" id="decision-3" role="tabpanel" tabindex="0"><div class="fg-decision-panel-head"><span class="material-symbols-outlined">format_list_numbered</span><strong>Formulario extenso</strong></div><div><b>Hallazgo</b><p>El onboarding concentraba demasiada información legal y financiera.</p><b>Decisión</b><p>Aplicar progressive disclosure y dividir el recorrido en pasos guiados.</p></div></article>
+                    <article class="fg-decision-panel" id="decision-4" role="tabpanel" tabindex="0"><div class="fg-decision-panel-head"><span class="material-symbols-outlined">sync_alt</span><strong>Cambios dispersos</strong></div><div><b>Hallazgo</b><p>Los cambios se perdían entre diseño, negocio y desarrollo.</p><b>Decisión</b><p>Crear un sistema de control de cambios visible en Figma.</p></div></article>
                 </div>
             </div>
 
@@ -220,17 +204,33 @@
                 </div>
             </div>
 
-            <div class="fg-card fg-decision-card">
+            <div class="fg-card fg-usability-card">
                 <div class="fg-card-col">
-                    <div class="fg-section-kicker">Fase de definición</div>
-                    <h3 class="fg-card-title">De la evidencia a la decisión</h3>
-                    <p class="fg-text">Cada tarjeta conecta un hallazgo de investigación con la decisión de diseño que tomamos.</p>
+                    <div class="fg-metric"><strong>11</strong><span>de 20 participantes estimados</span></div>
+                    <h3 class="fg-card-title">Pruebas de usabilidad y validación</h3>
+                    <p class="fg-text">El segmento era difícil de reclutar. Entrevistamos a 11 de las 20 personas estimadas y usamos las sesiones disponibles para validar el recorrido, la claridad del producto y la experiencia de cotización.</p>
                 </div>
-                <div class="fg-decision-panels" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:12px;width:100%;flex:0 0 100%;">
-                    <article class="fg-decision-panel" id="decision-1" role="tabpanel" tabindex="0"><div class="fg-decision-panel-head"><span class="material-symbols-outlined">lightbulb</span><strong>Propuesta compleja</strong></div><div><b>Hallazgo</b><p>La relación entre hipoteca, BTC y plazo era difícil de explicar.</p><b>Decisión</b><p>Reorganizar la arquitectura de información y mostrar escenarios comparables.</p></div></article>
-                    <article class="fg-decision-panel" id="decision-2" role="tabpanel" tabindex="0"><div class="fg-decision-panel-head"><span class="material-symbols-outlined">dashboard_customize</span><strong>Cotización fragmentada</strong></div><div><b>Hallazgo</b><p>El asesor necesitaba cambiar entre herramientas.</p><b>Decisión</b><p>Centralizar la cotización y sus variables principales en un mismo flujo.</p></div></article>
-                    <article class="fg-decision-panel" id="decision-3" role="tabpanel" tabindex="0"><div class="fg-decision-panel-head"><span class="material-symbols-outlined">format_list_numbered</span><strong>Formulario extenso</strong></div><div><b>Hallazgo</b><p>El onboarding concentraba demasiada información legal y financiera.</p><b>Decisión</b><p>Aplicar progressive disclosure y dividir el recorrido en pasos guiados.</p></div></article>
-                    <article class="fg-decision-panel" id="decision-4" role="tabpanel" tabindex="0"><div class="fg-decision-panel-head"><span class="material-symbols-outlined">sync_alt</span><strong>Cambios dispersos</strong></div><div><b>Hallazgo</b><p>Los cambios se perdían entre diseño, negocio y desarrollo.</p><b>Decisión</b><p>Crear un sistema de control de cambios visible en Figma.</p></div></article>
+                <div class="fg-card-col">
+                    <div class="fg-test-grid">
+                        <div><span class="material-symbols-outlined">flag</span><strong>Objetivo</strong><small>Validar claridad, intuición y facilidad de uso.</small></div>
+                        <div><span class="material-symbols-outlined">task_alt</span><strong>Tareas</strong><small>Recorrer escenarios y entender la cotización.</small></div>
+                        <div><span class="material-symbols-outlined">visibility</span><strong>Observación</strong><small>Detectar dudas, fricciones y errores.</small></div>
+                        <div><span class="material-symbols-outlined">autorenew</span><strong>Iteración</strong><small>Ajustar contenido, estructura y estados.</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fg-card fg-evaluation-card">
+                <div class="fg-card-col">
+                    <h3 class="fg-card-title">¿Qué se evaluó?</h3>
+                    <div class="fg-evaluation-grid">
+                        <div><span class="material-symbols-outlined">route</span><strong>Recorrido</strong><small>Facilidad para completar la cotización.</small></div>
+                        <div><span class="material-symbols-outlined">lightbulb</span><strong>Comprensión</strong><small>Claridad de la propuesta de BTC.</small></div>
+                        <div><span class="material-symbols-outlined">touch_app</span><strong>Intuición</strong><small>Fricciones y dudas durante el flujo.</small></div>
+                        <div><span class="material-symbols-outlined">dashboard_customize</span><strong>Centralización</strong><small>Menos herramientas para cotizar.</small></div>
+                        <div><span class="material-symbols-outlined">forum</span><strong>Respuesta</strong><small>Apoyo para conversar con clientes.</small></div>
+                        <div><span class="material-symbols-outlined">error_outline</span><strong>Fricciones</strong><small>Momentos de confusión o abandono.</small></div>
+                    </div>
                 </div>
             </div>
 
