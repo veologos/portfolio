@@ -42,3 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.key === 'Escape') closeModal();
     });
 });
+
+
+const prototypeVideo = document.querySelector('.fg-prototype-card video');
+if (prototypeVideo && 'IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) prototypeVideo.play().catch(() => {});
+            else prototypeVideo.pause();
+        });
+    }, { threshold: 0.35 });
+    videoObserver.observe(prototypeVideo);
+}
