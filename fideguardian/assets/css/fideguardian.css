@@ -145,3 +145,5 @@
 .fg-empathy-process>.fg-card-title{margin-bottom:2rem}.fg-empathy-process .fg-research-timeline{margin-top:0;margin-bottom:2.35rem}.fg-empathy-question{display:block;margin:0 0 1rem;color:#fff;font-size:18px;font-weight:600;line-height:1.35}.fg-empathy-question::first-letter{color:#40e0d0}.fg-empathy-process>.fg-text{margin-top:0}
 
 .fg-wireframe-img{background:#fff;max-height:420px;object-fit:contain}
+
+.fg-prototype-card{display:block}.fg-prototype-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.9fr);gap:2.5rem;align-items:start}.fg-prototype-top .fg-card-col{justify-content:flex-start}.fg-prototype-flow{width:100%;margin-top:2.25rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08)}.fg-prototype-flow-image{position:relative;width:100%;border-radius:16px;overflow:hidden;background:#0b0c10}.fg-prototype-flow-image .fg-card-img{display:block;width:100%;max-height:560px;object-fit:contain}.fg-prototype-flow .fg-caption{display:block;margin-top:.65rem}@media(max-width:768px){.fg-prototype-top{grid-template-columns:1fr;gap:1.25rem}.fg-prototype-flow{margin-top:1.5rem;padding-top:1.5rem}}
