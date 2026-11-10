@@ -157,3 +157,9 @@
 .fg-test-evaluation{flex:0 0 100%;width:100%;margin-top:1rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08)}.fg-test-evaluation-title{margin-bottom:1.25rem}
 
 .fg-ideation-stack{display:flex;flex-direction:column;gap:1rem;width:100%}.fg-ideation-stack .fg-image-link{display:block}.fg-ideation-stack .fg-fido-img{width:100%;max-height:430px;object-fit:contain;background:#000;border-radius:14px}.fg-ideation-stack .fg-ideation-diagram{width:100%;max-height:360px;object-fit:contain;background:#0b0c10;border-radius:14px}
+
+
+/* Cursor visible y consistente en el caso de estudio */
+#custom-cursor{width:16px;height:16px;background:rgba(64,224,208,.16);border:1.5px solid #40e0d0;border-radius:50%;clip-path:none;opacity:1;mix-blend-mode:normal;box-shadow:0 0 0 2px rgba(64,224,208,.08),0 0 14px rgba(64,224,208,.35)}
+#custom-cursor.hovered{width:5px;height:28px;background:linear-gradient(180deg,#40e0d0,#9b8cff);border:0;border-radius:3px;clip-path:none;opacity:1;box-shadow:0 0 10px rgba(64,224,208,.45)}
+@media (pointer:coarse){#custom-cursor{display:none}}
